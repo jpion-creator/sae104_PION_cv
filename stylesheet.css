@@ -64,7 +64,12 @@ section {
     height: auto;
     background-color: #C2D4DB;
 }
-
+.conteneur_experience p {
+    margin: 30px;
+    width: 600px;
+    height: auto;
+    background-color: #C2D4DB;
+}
 .photo_profil {
     width: 150px;
     height: auto;
@@ -305,4 +310,5 @@ footer {
         width: 120px;
         height: 120px;
     }
+
 }
