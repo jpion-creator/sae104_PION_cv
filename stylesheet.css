@@ -1,0 +1,308 @@
+
+/*Partie main.html  */
+.body_main {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #D0E0E5;  /* Fond principal */
+    margin: 0;
+    padding: 0;
+}
+
+#cover {
+    text-align: center;
+}
+
+section {
+    margin: 30px;
+}
+
+/* Barre de navigation & page d'accueil */
+#naviguation {
+    background-color: #4A7C85;  
+    padding: 20px;
+}
+
+#liste_puce {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+}
+
+#liste_puce a {
+    color: #E8F2F4;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #3B6A73;
+    border-radius: 8px;
+}
+
+#liste_puce a:hover {
+    background-color: #2F555C;
+}
+
+#page_animation {
+    color: #2B4A55;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    -webkit-animation: fadeIn 2s ease forwards;
+}
+
+/* Section à propos de moi */
+.conteneur_photo_profil {
+    margin: 30px;
+    display: flex;
+    background-color: #C2D4DB;
+    border-radius: 12px;
+}
+
+.conteneur_photo_profil p {
+    margin: 30px;
+    width: 600px;
+    height: auto;
+    background-color: #C2D4DB;
+}
+
+.photo_profil {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/*Section colonne ( Cela permet de mettre à gauche compétence et à droite logiciel */
+
+.conteneur_colonne{
+
+    display: flex;
+    justify-content: space-between;    /* gauche tout à gauche / droite tout à droite */
+    gap: 30px;                         /* espace entre les deux colonnes */
+    align-items: flex-start;           /* alignement en haut */
+    max-width: 1400px;                 /* largeur totale raisonnable */
+}
+/* Section compétence */
+
+.conteneur_competence {
+    margin-left:auto ;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+    gap: 30px;                  
+
+}
+
+.conteneur_competence img {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.competence {
+    display: flex;
+    width: 600px;
+    height: auto;
+    border-radius: 12px;
+ 
+    background-color: #C2D4DB;
+
+}
+/* Section Logiciels */
+
+
+
+
+/* Section Certifications */
+.conteneur_certifications {
+    margin: 50px 30px;
+}
+
+.conteneur_certifications h2 {
+    text-align: center;
+    color: #2B4A55;
+    margin-bottom: 40px;
+}
+
+.certification {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certification img {
+    width: 110px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.certif-text h3 {
+    margin: 0 0 6px 0;
+    color: #3B6A73;
+}
+
+.certif-text p {
+    margin: 0;
+    color: #344D59;
+    font-size: 0.95em;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Partie projet.html */
+.body_projet {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #D0E0E5;  /* Même fond que main.html */
+    margin: 0;
+    padding: 0;
+}
+
+.section-projets {
+    padding: 4rem 2rem;
+    background: #C2D4DB;
+    text-align: center;
+}
+
+.section-projets h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #2B4A55;
+}
+
+.projets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projet-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #e0eef4;
+    padding: 2rem;
+    border-radius: 12px;
+ 
+}
+
+.projet-img {
+    width: auto;
+    max-width:140px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.projet-info {
+    flex: 1;
+    text-align: left;
+}
+
+.projet-info h3 {
+    margin: 30px;
+    font-size: 1.4rem;
+    color: #2B4A55;
+}
+
+.projet-info p {
+    margin: 30px;
+    color: #344D59;
+
+}
+
+
+
+/* Animation fadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Responsive - Partie main.html */
+@media (max-width: 768px) {
+    #liste_puce {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .conteneur_photo_profil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .conteneur_photo_profil p {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .photo_profil {
+        width: 120px;
+        height: auto;
+    }
+
+    .competence {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .competence img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .certification {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+
+    .certification img {
+        width: 90px;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 10px;
+    }
+}
+
+/* Responsive - Partie projet.html */
+@media (max-width: 640px) {
+    .projet-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .projet-img {
+        width: 120px;
+        height: 120px;
+    }
+}
