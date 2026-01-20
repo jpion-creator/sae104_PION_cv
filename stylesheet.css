@@ -232,6 +232,7 @@ footer {
     margin: 30px;
     display: flex;
     justify-content:center;
+    text-align: center;
     
     background-color: #C2D4DB;
     border-radius: 12px;
@@ -334,6 +335,22 @@ footer {
     }
 
 }
+/* Responsive - Partie contact.html */
+
+@media (max-width: 768px) {
+    .conteneur_contact {
+        flex-direction: column;    
+        align-items: center;        
+        gap: 1.5rem;                
+        padding: 1.5rem;            
+        margin: 20px 15px;         
+    }
+
+    .conteneur_contact img {
+        width: 100px;               
+        height: auto;
+    }
+
 
 
 
