@@ -227,7 +227,19 @@ footer {
     color: #344D59;
 
 }
+/*Partie contact.html*/
+.conteneur_contact {
+    margin: 30px;
+    display: flex;
+    background-color: #C2D4DB;
+    border-radius: 12px;
+}
+.conteneur_contact img {
+    width:150px;
+    height:auto;
 
+    
+}
 
 
 /* Animation fadeIn */
@@ -312,3 +324,4 @@ footer {
     }
 
 }
+
