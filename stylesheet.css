@@ -231,19 +231,14 @@ footer {
 .conteneur_contact {
     margin: 30px;
     display: flex;
+    justify-content:center;
+    
     background-color: #C2D4DB;
     border-radius: 12px;
 }
 .conteneur_contact img {
     width:150px;
     height:auto;
-.conteneur_contact a {
-    align-items:center;
-    
-}
-.conteneur_contact p{
-    align-items:center;
-}
 
     
 }
@@ -339,6 +334,7 @@ footer {
     }
 
 }
+
 
 
 
