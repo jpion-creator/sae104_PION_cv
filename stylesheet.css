@@ -240,6 +240,12 @@ footer {
 
     
 }
+.body_contact {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #D0E0E5;  /* Fond principal */
+    margin: 0;
+    padding: 0;
+}
 
 
 /* Animation fadeIn */
@@ -324,4 +330,5 @@ footer {
     }
 
 }
+
 
